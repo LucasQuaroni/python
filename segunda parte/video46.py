@@ -1,1 +1,0 @@
-# hacer hasta aca. Revisar videos e ir competando
