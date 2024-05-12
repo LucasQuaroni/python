@@ -14,14 +14,14 @@
 # 
 # Utilzar funciones, listas.
 
-NUM_CLUBES = 2
+CLUBES = 2
 arrayClubes = []
-contadorTemporales = [0] * NUM_CLUBES
-contadorPermanentes = [0] * NUM_CLUBES
+contadorTemporales = [0] * CLUBES
+contadorPermanentes = [0] * CLUBES
 
 def ingresoDatos(lista):
     print("Ingreso de datos")
-    for i in range(NUM_CLUBES):
+    for i in range(CLUBES):
         print("--------------------------------------------------------------------------------------")
         print("Club nro: ", i+1)
         lista.append([])
@@ -53,7 +53,7 @@ def ingresoDatos(lista):
 def procesoDatos(lista):
     global contadorTemporales, contadorPermanentes
     print("Comienza el procesado de datos")
-    for i in range(NUM_CLUBES):
+    for i in range(CLUBES):
         for j in range(100):
             if lista[i][j][0] == 0:
                 break
@@ -64,7 +64,7 @@ def procesoDatos(lista):
                     contadorPermanentes[i] += 1
         
 def salidaDatos(temporales, permanentes):
-    for i in range(NUM_CLUBES):
+    for i in range(CLUBES):
         print("--------------------------------------------------------------------------------------")
         print("Club nro: ", i+1)
         print("Cantidad de socios temporales mayores de edad: ", contadorTemporales[i])
