@@ -149,7 +149,7 @@ comentariosLabel.grid(row=5, column=0, sticky="e", padx=10, pady=10)
 botonesFrame = Frame(root)
 botonesFrame.pack(pady=10)
 
-botonCrear = Button(botonesFrame, text="Crear", command=crear)
+botonCrear = Button(botonesFrame, text="Crear", command=crearUsuario)
 botonCrear.pack(side=LEFT, padx=10)
 
 botonLeer = Button(botonesFrame, text="Leer", command=leerUsuario)
