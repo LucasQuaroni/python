@@ -44,7 +44,6 @@ def leerUsuario():
     cursor.execute("SELECT * FROM datosUsuarios WHERE id=" + cuadroID.get())
     elUsuario=cursor.fetchall()
     for usuario in elUsuario:
-        cuadroID.insert(0, usuario[0])
         cuadroNombre.insert(0, usuario[1])
         cuadroPass.insert(0, usuario[2])
         cuadroApellido.insert(0, usuario[3])
